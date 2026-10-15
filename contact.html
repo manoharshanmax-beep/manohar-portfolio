@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Manohar Sharma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<canvas id="bg-canvas"></canvas>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Manohar Sharma — home">
+      <span class="brand-mark">MS</span>
+      Manohar Sharma <span class="brand-file">/portfolio.js</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">home</a></li>
+      <li><a href="about.html" class="nav-link">about</a></li>
+      <li><a href="skills.html" class="nav-link">skills</a></li>
+      <li><a href="goals.html" class="nav-link">goals</a></li>
+      <li><a href="projects.html" class="nav-link">projects</a></li>
+      <li><a href="resume.html" class="nav-link">resume</a></li>
+      <li><a href="contact.html" class="nav-link active" aria-current="page">contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+<section id="contact">
+  <div class="wrap">
+    <div class="kicker">// contact.py</div>
+    <div class="section-head">
+      <h2>Let's talk</h2>
+      <p class="lede">Open to feedback on SpareFixer, collaboration, or just a conversation about code.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="info-row">
+          <div class="info-icon">◎</div>
+          <div><div class="lbl">location</div><div class="val">Madurai, Tamil Nadu, India</div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">☰</div>
+          <div><div class="lbl">languages</div><div class="val">Tamil, English, Hindi, Rajasthani</div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">▣</div>
+          <div><div class="lbl">currently</div><div class="val">Building SpareFixer &amp; studying full-stack AI dev</div></div>
+        </div>
+      </div>
+      <form class="reveal" id="contactForm">
+        <div class="field"><label for="cname">name</label><input id="cname" type="text" required placeholder="Your name"></div>
+        <div class="field"><label for="cemail">email</label><input id="cemail" type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label for="cmsg">message</label><textarea id="cmsg" required placeholder="Say hello, or tell me about an opportunity..."></textarea></div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <div id="formMsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>Manohar Sharma — Madurai, India</p>
+    <p>Built with HTML, CSS &amp; JS</p>
+  </div>
+</footer>
+
+<div id="toTop" title="Back to top">↑</div>
+
+<script src="script.js"></script>
+</body>
+</html>

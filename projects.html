@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Manohar Sharma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<canvas id="bg-canvas"></canvas>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Manohar Sharma — home">
+      <span class="brand-mark">MS</span>
+      Manohar Sharma <span class="brand-file">/portfolio.js</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">home</a></li>
+      <li><a href="about.html" class="nav-link">about</a></li>
+      <li><a href="skills.html" class="nav-link">skills</a></li>
+      <li><a href="goals.html" class="nav-link">goals</a></li>
+      <li><a href="projects.html" class="nav-link active" aria-current="page">projects</a></li>
+      <li><a href="resume.html" class="nav-link">resume</a></li>
+      <li><a href="contact.html" class="nav-link">contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+<section id="projects" aria-labelledby="projects-title">
+  <div class="wrap">
+    <div class="kicker">// projects/</div>
+    <div class="section-head">
+      <h2 id="projects-title">My Projects</h2>
+      <p class="lede">Two things I've built: a spare-parts product I'm growing into a startup, and a live site for a dance academy.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- Project 1: SpareFixer
+           To publish the link, set PROJECT_LINKS.sparefixer in the script at the bottom of the page. -->
+      <article class="project-card reveal" style="--d:0s">
+        <div class="project-top">
+          <span class="project-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M20.5 5.5a6 6 0 0 0-5.6 8.2L5.8 22.8a2.4 2.4 0 0 0 3.4 3.4l9.1-9.1a6 6 0 0 0 8.2-5.6l-3.6 3.6-3.4-.9-.9-3.4z"/><circle cx="8.2" cy="24.6" r="0.6"/></svg>
+          </span>
+          <span class="project-status">in development</span>
+        </div>
+        <span class="project-index">01 / project</span>
+        <h3>SpareFixer</h3>
+        <p class="project-desc">An automotive spare-parts finder designed to help users discover the right vehicle parts.</p>
+        <div class="tag-row">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Vanilla JS</span>
+          <span class="tag">UI design</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary project-btn" id="sparefixerLink" href="projects.html" data-project="sparefixer" aria-label="Explore SpareFixer project">
+            Explore Project <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <span class="project-note" id="sparefixerNote">// live link coming soon</span>
+        </div>
+      </article>
+
+      <!-- Project 2: Bajrang Narthanalaya -->
+      <article class="project-card reveal" style="--d:0.12s">
+        <div class="project-top">
+          <span class="project-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><circle cx="16" cy="6" r="2.6"/><path d="M16 9.5v8"/><path d="M16 12l-6.5-3.5M16 12l6.5-3.5"/><path d="M9.5 8.5L7 5M22.5 8.5L25 5"/><path d="M16 17.5l-6 4.5 1.5 6M16 17.5l6 4.5-1.5 6"/></svg>
+          </span>
+          <span class="project-status">live</span>
+        </div>
+        <span class="project-index">02 / project</span>
+        <h3>Bajrang Narthanalaya</h3>
+        <p class="project-desc">A Bharatanatyam dance academy website showcasing classes, training, and the academy's activities.</p>
+        <div class="tag-row">
+          <span class="tag">Responsive UI</span>
+          <span class="tag">Web design</span>
+          <span class="tag">Vercel</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary project-btn" href="https://bajarang-barathanatiyam.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Explore Bajrang Narthanalaya project (opens in a new tab)">
+            Explore Project <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>Manohar Sharma — Madurai, India</p>
+    <p>Built with HTML, CSS &amp; JS</p>
+  </div>
+</footer>
+
+<div id="toTop" title="Back to top">↑</div>
+
+<script src="script.js"></script>
+</body>
+</html>
